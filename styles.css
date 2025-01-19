@@ -981,3 +981,130 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Mobile-first responsive design */
+@media (max-width: 768px) {
+    /* Header and Navigation */
+    header {
+        padding: 0.8rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        min-height: 60vh;
+        padding: 1rem;
+    }
+
+    .hero-content {
+        padding: 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Section Titles */
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Cards and Grids */
+    .card {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .robotics-grid-container,
+    .music-grid-container {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    .robotics-grid,
+    .music-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .robotics-item,
+    .music-item {
+        padding: 1.5rem;
+    }
+
+    .robotics-item h3,
+    .music-item h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Content Sections */
+    .content {
+        padding: 1rem;
+    }
+
+    .section {
+        padding: 2rem 1rem;
+    }
+
+    /* Gallery */
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    /* Achievements Lists */
+    .achievements-list {
+        padding-left: 1rem;
+    }
+
+    .achievements-list li {
+        font-size: 0.95rem;
+    }
+}
+
+/* Add viewport meta tag to ensure proper scaling */
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+}
